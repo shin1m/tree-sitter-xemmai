@@ -1,0 +1,110 @@
+================
+Comments
+================
+
+# This is a comment.
+
+----------------
+
+(source_file
+  (comment)
+)
+
+================
+Symbols
+================
+
+foo :bar
+
+----------------
+
+(source_file
+  (symbol)
+  (symbol)
+)
+
+================
+Selfs
+================
+
+$ :$
+
+----------------
+
+(source_file
+  (self)
+  (self)
+)
+
+================
+Lambdas
+================
+
+@(x, y)
+
+----------------
+
+(source_file
+  (lambda)
+  (symbol)
+  (symbol)
+)
+
+================
+Literals
+================
+
+null
+false
+true
+0
+"foo"
+'bar
+"This
+is a
+multiline
+string."
+
+----------------
+
+(source_file
+  (literal)
+  (literal)
+  (literal)
+  (literal)
+  (literal)
+  (literal)
+  (literal)
+)
+
+================
+Keywords
+================
+
+break
+continue
+return
+throw
+if
+else
+while
+for
+try
+catch
+finally
+
+----------------
+
+(source_file
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+  (keyword)
+)

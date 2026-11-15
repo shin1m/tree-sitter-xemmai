@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tree-sitter-cli": "^0.27.1"
+  },
+  "allowScripts": {
+    "tree-sitter-cli@0.27.1": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "xemmai",
+      "camelcase": "Xemmai",
+      "title": "xemmai",
+      "scope": "source.xemmai",
+      "file-types": [
+        "xemmai"
+      ],
+      "injection-regex": "^xemmai$",
+      "class-name": "TreeSitterXemmai"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "xemmai grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Shin-ichi MORITA",
+        "url": "https://github.com/shin1m"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/shin1m/tree-sitter-xemmai",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": false,
+    "java": false,
+    "node": false,
+    "python": false,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}

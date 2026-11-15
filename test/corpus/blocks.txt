@@ -1,0 +1,152 @@
+================
+Empty
+================
+----------------
+
+(source_file)
+
+================
+Block at tail
+================
+
+foo
+	foo
+
+----------------
+
+(source_file
+  (symbol)
+  (block
+    (symbol)
+  )
+)
+
+================
+Block at head
+================
+	foo
+----------------
+
+(source_file
+  (block
+    (symbol)
+  )
+)
+
+================
+Block at head and expression
+================
+	foo
+foo
+
+----------------
+
+(source_file
+  (block
+    (symbol)
+  )
+  (symbol)
+)
+
+================
+White space
+================
+
+foo foo
+
+----------------
+
+(source_file
+  (symbol)
+  (symbol)
+)
+
+================
+Comments
+================
+
+# comment
+foo # comment
+	# comment
+	foo# comment
+	# comment
+# comment
+
+----------------
+
+(source_file
+  (comment)
+  (symbol)
+  (comment)
+  (block
+    (comment)
+    (symbol)
+    (comment)
+    (comment)
+  )
+  (comment)
+)
+
+================
+Nested dedents to level zero
+================
+
+foo
+	foo
+		foo
+
+----------------
+
+(source_file
+  (symbol)
+  (block
+    (symbol)
+    (block
+      (symbol)
+    )
+  )
+)
+
+================
+Nested dedents to level one
+================
+
+foo
+	foo
+		foo
+			foo
+	foo
+
+----------------
+
+(source_file
+  (symbol)
+  (block
+    (symbol)
+    (block
+      (symbol)
+      (block
+        (symbol)
+      )
+    )
+    (symbol)
+  )
+)
+
+================
+No dedent
+================
+
+foo
+		foo
+	foo
+
+----------------
+
+(source_file
+  (symbol)
+  (block
+    (symbol)
+    (symbol)
+  )
+)
